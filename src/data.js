@@ -1,4 +1,4 @@
-import { IoCodeWorking,IoLogoGithub, IoLogoInstagram,IoLogoLinkedin} from "react-icons/io5";
+import { IoCodeWorking,IoLogoGithub, IoLogoInstagram,IoLogoLinkedin, IoLogoTwitter} from "react-icons/io5";
 
 
 export const Experience = [
@@ -58,5 +58,11 @@ export const Experience = [
     name: "LinkedIn",
     link: "#",
   },
+  {
+    id: 4,
+    iconSrc: IoLogoTwitter,
+    name: "Twitter",
+    link: "#",
+  }
  
 ];
