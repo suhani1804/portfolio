@@ -20,11 +20,11 @@ function App() {
             <a href="#about" className="text-lg font-medium hover:text-purple-400 cursor-pointer duration-100 ease-in-out">About</a>
             <a href="#projects" className="text-lg  font-medium hover:text-purple-400 cursor-pointer duration-100 ease-in-out">Projects</a>
             <a href="#contact" className="text-lg font-medium hover:text-purple-400 cursor-pointer duration-100 ease-in-out">Contact</a>
-            <motion.a 
+            {/* <motion.a 
             whileTap={{scale:0.9}}
             href="#" className="w-full md:w-auto relative inline-flex items-center justify-center overflow-hidden text-base  text-black rounded-lg group bg-gradient-to-br from-purple-500 to-slate-300 group-hover:from-purple-900 group-hover:to-slate-600 hover:text-gray-800 hover:shadow-lg hover:shadow-slate-300/50 hover:dark:shadow-lg hover:dark:shadow-slate-800/80" >
             <span className="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-100 rounded-md group-hover:bg-opacity-0">Download</span>
-            </motion.a>
+            </motion.a> */}
           </div>
           <motion.div
             whileTap={{scale:0.8}}
@@ -38,9 +38,9 @@ function App() {
               <a href="#about" className="text-lg text-slate-50 font-medium hover:text-purple-400 cursor-pointer duration-100 ease-in-out"onClick={()=>setisActive(false)}>About</a>
               <a href="#projects" className="text-lg  text-slate-50 font-medium hover:text-purple-400 cursor-pointer duration-100 ease-in-out"onClick={()=>setisActive(false)}>Projects</a>
               <a href="#contact" className="text-lg  text-slate-50  font-medium hover:text-purple-400 cursor-pointer duration-100 ease-in-out"onClick={()=>setisActive(false)}>Contact</a>
-              <a href="#" className=" p-0.5 mb-2 mr-2 md:w-auto relative inline-flex items-center justify-center overflow-hidden text-base  text-black rounded-lg group bg-gradient-to-br from-purple-500 to-slate-300 group-hover:from-purple-900 group-hover:to-slate-600 hover:text-gray-800 hover:shadow-lg hover:shadow-slate-300/50 hover:dark:shadow-lg hover:dark:shadow-slate-800/80" onClick={()=>setisActive(false)} >
+              {/* <a href="#" className=" p-0.5 mb-2 mr-2 md:w-auto relative inline-flex items-center justify-center overflow-hidden text-base  text-black rounded-lg group bg-gradient-to-br from-purple-500 to-slate-300 group-hover:from-purple-900 group-hover:to-slate-600 hover:text-gray-800 hover:shadow-lg hover:shadow-slate-300/50 hover:dark:shadow-lg hover:dark:shadow-slate-800/80" onClick={()=>setisActive(false)} >
               <span className="w-full md:w-auto relative px-5 py-2.5 transition-all ease-in duration-100 rounded-md group-hover:bg-opacity-0">Download</span>
-              </a>
+              </a> */}
 
             </div>
           )}
@@ -53,7 +53,7 @@ function App() {
           
             <div className="w-full h-420 flex items-center justify-center">
               <div className=" w-375 h-420 rounded-lg bg-slate-500">
-                <img className=" w-full h-full object-cover rounded-lg drop-shadow-2xl -right-4 top-4 " src="src\assets\image.jpg" alt="" />
+                <img className=" w-full h-full object-cover rounded-lg drop-shadow-2xl -right-4 top-4 " src=".\src\assets\image.jpg" alt="" />
               </div>
             </div>
             

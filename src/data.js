@@ -27,15 +27,22 @@ export const Experience = [
         name: "TextUtils",
         techstack: "ReactJs, Tailwind ",
         image:"",
-        git:"#",
+        git:"https://github.com/suhani1804/Text-utils",
     },
     {
         id: 2,
         name: "Crypto Exchange using solidity",
         techstack: "Solidity, ReactJs, Tailwind ",
         image:"",
-        git:"#",
-    }  
+        git:"https://github.com/suhani1804/Crypto-Exchange",
+    },
+    {
+        id: 3,
+        name: "Web3.0 drive",
+        techstack: "Solidity, NextJs, Bootstrap ",
+        image:"",
+        git:"https://github.com/suhani1804/G3drive"
+    }
   ];
 
   export const SocialLinks = [
@@ -43,26 +50,19 @@ export const Experience = [
     id: 1,
     iconSrc: IoLogoGithub,
     name: "GitHub",
-    link: "#",
-  },
-  {
-    id: 2,
-    iconSrc: IoLogoInstagram,
-    name: "Instagram",
-    link: "#",
-  },
-  
+    link: "https://github.com/suhani1804",
+  }, 
   {
     id: 3,
     iconSrc: IoLogoLinkedin,
     name: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/in/suhani18/",
   },
   {
     id: 4,
     iconSrc: IoLogoTwitter,
     name: "Twitter",
-    link: "#",
+    link: "https://twitter.com/SuhaniMoha16683",
   }
  
 ];
