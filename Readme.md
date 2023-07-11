@@ -14,10 +14,3 @@ Tailwind<br/>
 JavaScript<br/>
 Firebase<br/>
 
-
-pnpm add @splinetool/react-spline
-pnpm add @splinetool/runtime
-
-<div className="relative" id="home">
-    <Spline scene="paste the url"/>
-</div>
