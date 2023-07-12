@@ -4,6 +4,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import { Experience, Project, SocialLinks } from "./data";
 import {AnimatePresence,motion} from 'framer-motion';
+import myimage from './assets/image_adobe_express.svg'
 
 function App() {
   
@@ -53,7 +54,7 @@ function App() {
           
             <div className="w-full h-420 flex items-center justify-center">
               <div className=" w-375 h-420 rounded-lg bg-slate-500">
-                <img className=" w-full h-full object-cover rounded-lg drop-shadow-2xl -right-4 top-4 " src=".\src\assets\image.jpg" alt="" />
+                <img className=" w-full h-full object-cover rounded-lg drop-shadow-2xl -right-4 top-4 " src={myimage} alt="" />
               </div>
             </div>
             
@@ -103,7 +104,7 @@ B.Tech CSIT student, Web3 developer also researcher. With a passion for explorin
                 {n.name.length>22 ? `${n.name.slice(0,22)}...` : n.name}
               </p>
 
-              <img src="src\assets\image.jpg" alt="" className="w-full h-60 object-cover rounded-md my-2" />
+              <div className="w-60 h-60 object-cover rounded-md my-2 ml-2 text-justify"> {n.des}</div>
               <div className="flex flex-1 items-center justify-between p-2">
                 <p className="text-lg">
                   Technologies
@@ -147,28 +148,3 @@ B.Tech CSIT student, Web3 developer also researcher. With a passion for explorin
 }
 
 export default App
-
-// {
-//   id: 1,
-//   iconSrc: "IoLogoGithub className='text-textBase text-3xl cursor-pointer'",
-//   name: "GitHub",
-//   link: "#",
-// },
-// {
-//   id: 2,
-//   iconSrc: "IoLogoYoutube className='text-red-500 text-3xl cursor-pointer'",
-//   name: "YouTube",
-//   link: "#",
-// },
-// {
-//   id: 3,
-//   iconSrc:"IoLogoTwitter className='text-blue-500 text-3xl cursor-pointer'"  ,
-//   name: "Twitter",
-//   link: "#",
-// },
-// {
-//   id: 4,
-//   iconSrc: "IoLogoLinkedin className='text-blue-800 text-3xl cursor-pointer'",
-//   name: "LinkedIn",
-//   link: "#",
-// },
