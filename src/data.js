@@ -66,3 +66,27 @@ export const Experience = [
   }
  
 ];
+export const skill = [
+  {
+      id: 1,
+      name: "ReactJs",
+      des:"I am in the early stages of my journey to become proficient in building web applications with ReactJS. I am enthusiastic about learning and have a solid foundation in JavaScript. I am excited to dive into the React ecosystem and explore concepts such as component-based architecture, state management, and JSX syntax."
+  },
+  {
+      id: 2,
+      name: "Blockchain Research",
+      des:" I possess a deep interest and dedication to understanding the intricacies of blockchain technology. I am highly motivated to explore its potential applications, consensus algorithms, and smart contracts. With a solid foundation in computer science and cryptography, I am eager to contribute to the advancement of blockchain solutions.",
+      
+  },
+  {
+      id: 3,
+      name: "Web3 Development",
+      des:"As a Web3 developer, I am proficient in building decentralized applications (dApps) using blockchain technologies. I have a strong grasp of Ethereum, Solidity, and smart contract development. I am skilled in integrating with Web3 libraries and APIs, enabling me to create secure and transparent applications for the decentralized web.",
+     
+  },
+  { 
+    id:4,
+    name: "Devops Practitioner",
+    des:" I have a basic understanding of concepts such as CI/CD, version control, and automation. I am enthusiastic about acquiring skills in tools like Git, Docker, and Jenkins to streamline software development processes and improve collaboration between teams. I am excited to grow my knowledge and make meaningful contributions in the DevOps space.",
+  }
+];

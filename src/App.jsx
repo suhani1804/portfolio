@@ -2,9 +2,9 @@ import { useState } from "react"
 import {IoMenu,IoLogoGithub} from 'react-icons/io5';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { Experience, Project, SocialLinks } from "./data";
+import { Experience, Project, SocialLinks , skill} from "./data";
 import {AnimatePresence,motion} from 'framer-motion';
-import myimage from './assets/image_adobe_express.svg'
+import myimage from './assets/image.jpg'
 
 function App() {
   
@@ -13,7 +13,7 @@ function App() {
   return (
     <AnimatePresence initial={false}>
     <div className="flex w-screen h-full pb-20 flex-col bg-[#000000] justify-center items-center">
-      <nav className=" w-full z-50 fixed insert-x-0 top-0 mb-20 flex justify-center items-center bg-black ml-auto">
+      <nav className=" w-full z-50 fixed insert-x-0 top-0 mb-20 flex justify-center items-center bg-black ml-auto" id="home">
         <div className="text-purple-600 w-[80%] px-8 py-3 rounded-lg flex justify-around items-center ">
           <p className=" w-full lg:px-10 mr-auto text-2xl text-purple-900 font-medium ">Suhani </p>
           <div className="hidden md:flex items-center justify-center gap-6 flex-1  mr-6 ">
@@ -68,8 +68,10 @@ B.Tech CSIT student, Web3 developer also researcher. With a passion for explorin
         </section>
         {/* Experience section */}
         <section className="w-full rounded-xl py-10 flex justify-center flex-col items-center">
-          <div className="h-20"><h1 className=" text-4xl font-normal text-purple-500"> Experience </h1></div>
-          
+        <section className="bg-black-100 rounded-[20px]">
+          <div className="bg-tertiary rounded-2xl sm:px-16 px-2 sm:py-16 min-h-[100px]">
+            <h1 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"> Experiences </h1></div>
+        </section>
           <VerticalTimeline>
             {Experience &&
               Experience.map(n =>
@@ -92,19 +94,20 @@ B.Tech CSIT student, Web3 developer also researcher. With a passion for explorin
           </VerticalTimeline>
         </section>
         
-        <section className="w-full rounded-xl py-10 flex justify-center flex-col items-center">
-          <div className="h-1"><h1 className=" text-4xl font-normal text-purple-500"> Projects </h1></div>
+        <section className="bg-black-100 flex flex-col items-center justify-center w-full rounded-[20px]" id="projects">
+          <div className="bg-tertiary rounded-2xl sm:px-16 px-2 sm:py-16 min-h-[100px] ">
+            <h1 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[20px]"> Projects </h1></div>
         </section>
-        <section className="flex flex-wrap items-center justify-evenly my-24 gap-4" id="projects">
+        <section className="flex flex-wrap items-center justify-evenly my-10 gap-4" >
           
           {Project && Project.map(n=>
             (
-            <div key={n.id} className="border border-zinc-400 rounded-xl px-2 min-w-[300px] md:max-w-[275px] hover:border-zinc-300 duration-100 ease-out bg-[#E4A5FF]">
-              <p className="text-lg font-medium uppercase text-center pt-2 " >
+            <div key={n.id} className="border p-5 border-zinc-400 rounded-xl min-w-[350px] md:max-w-[275px] hover:border-zinc-300 duration-100 ease-out text-slate-300  bg-black">
+              <p className="text-lg text-purple-300 font-black uppercase text-center pt-2 " >
                 {n.name.length>22 ? `${n.name.slice(0,22)}...` : n.name}
               </p>
 
-              <div className="w-60 h-60 object-cover rounded-md my-2 ml-2 text-justify"> {n.des}</div>
+              <div className=" h-64 object-cover rounded-md my-2 text-justify text-[17px] "> {n.des}</div>
               <div className="flex flex-1 items-center justify-between p-2">
                 <p className="text-lg">
                   Technologies
@@ -124,8 +127,32 @@ B.Tech CSIT student, Web3 developer also researcher. With a passion for explorin
           
         </section>
 
-        <section className="flex flex-col items-center justify-center w-full my-24 text-[#ffffff] " id="contacts">
-          <p className="text-3xl pb-3 text-purple-500 capitalize">Contact me here</p>
+        <section className="mt-12 bg-black-100 flex flex-col items-center justify-center w-full rounded-[20px]" id="Skill">
+          <div className="bg-tertiary rounded-2xl sm:px-16 px-6 sm:py-16 py-10 min-h-[300px]">
+            <h1 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"> Skills </h1></div>
+        </section>
+        <section className="-mt-20 pb-14 sm:px-16 px-6 flex flex-wrap gap-7" >
+          
+          {skill && skill.map(n=>
+            (
+            <div key={n.id} className=" bg-[#E4A5FF] p-10 rounded-3xl xs:w-[320px] w-full">
+              <p className=" font-black text-[#761c9d]  tracking-wider text-[30px] bg-tertiary rounded-2xl " >
+                {n.name.length>22 ? `${n.name.slice(0,22)}...` : n.name}
+              </p>
+
+              <div className="mt-4"> 
+                <p className="text-black tracking-wider text-[18px]">{n.des}</p>
+                </div>
+            </div>
+          
+            ))}
+          
+        </section>
+
+        <section className="bg-black-100 flex flex-col items-center justify-center w-full my-12 text-[#ffffff] rounded-[20px]" id="contact">
+          <div className="bg-tertiary rounded-2xl sm:px-16 px-2 sm:py-16 min-h-[100px]">
+            <h1 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"> Contact me here </h1></div>
+        
           <div 
           className="flex flex-row items-center justify-center w-full mt-4 gap-4">
           {SocialLinks && SocialLinks.map(n=>(
@@ -138,9 +165,9 @@ B.Tech CSIT student, Web3 developer also researcher. With a passion for explorin
           ))}
           
           </div>
-          <div class="flex flex-col items-center justify-center w-full text-[#ffffff]"><h5 className="mt-5">Email - suhanimohanty402@gmail.com</h5>
+          <div className="flex flex-col items-center justify-center w-full text-[#ffffff]"><h5 className="mt-5">Email - suhanimohanty402@gmail.com</h5>
           </div>
-        </section>
+          </section>
       </main>
     </div>
     </AnimatePresence>
