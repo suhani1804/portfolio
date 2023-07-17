@@ -50,7 +50,7 @@ function App() {
       
       <main className="w-[80%] mt-20 ">
         {/* About-section */}
-        <section className="w-full lg:h-[520px] grid grid-cols-1 md:grid-cols-2 gap-4 lg:my-24 mb-10 " id="about">
+        <section className="w-full lg:h-[520px] grid grid-cols-1 md:grid-cols-2 gap-4 lg:my-24 mb-10" id="about">
           
             <div className="w-full h-420 flex items-center justify-center">
               <div className=" w-375 h-420 rounded-lg bg-slate-500">
@@ -58,7 +58,7 @@ function App() {
               </div>
             </div>
             
-            <div className="flex h-420 items-center justify-center flex-col w-full gap-4">
+            <div className="flex h-420 items-center justify-center flex-col mt-12 sm:mt-4 md:mt-4 w-full gap-4">
                 <div className=" flex flex-col gap-4">
                   <p className="text-6xl font-semibold text-purple-500 ">I'm <span className="font-bold text-6xl text-purple-600 ">Suhani Mohanty</span></p>
                   <p className="text-purple-300 text-lg">
@@ -95,14 +95,14 @@ B.Tech CSIT student, Web3 developer also researcher. With a passion for explorin
         </section>
         
         <section className="bg-black-100 flex flex-col items-center justify-center w-full rounded-[20px]" id="projects">
-          <div className="bg-tertiary rounded-2xl sm:px-16 px-2 sm:py-16 min-h-[100px] ">
-            <h1 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[20px]"> Projects </h1></div>
+          <div className="bg-tertiary rounded-2xl sm:px-16 px-6 sm:py-16 py-10 min-h-[100px] ">
+            <h1 className="text-white font-black md:text-[60px] sm:text-[30px] xs:text-[40px] text-[20px]"> Projects </h1></div>
         </section>
-        <section className="flex flex-wrap items-center justify-evenly my-10 gap-4" >
+        <section className="flex flex-wrap items-center md:mx-8 sm:px-8 justify-evenly my-10 gap-4" >
           
           {Project && Project.map(n=>
             (
-            <div key={n.id} className="border p-5 border-zinc-400 rounded-xl min-w-[350px] md:max-w-[275px] hover:border-zinc-300 duration-100 ease-out text-slate-300  bg-black">
+            <div key={n.id} className="border p-5 border-zinc-400 rounded-xl min-w-[320px] md:max-w-[275px] hover:border-zinc-300 duration-100 ease-out text-slate-300  bg-black">
               <p className="text-lg text-purple-300 font-black uppercase text-center pt-2 " >
                 {n.name.length>22 ? `${n.name.slice(0,22)}...` : n.name}
               </p>
@@ -128,14 +128,14 @@ B.Tech CSIT student, Web3 developer also researcher. With a passion for explorin
         </section>
 
         <section className="mt-12 bg-black-100 flex flex-col items-center justify-center w-full rounded-[20px]" id="Skill">
-          <div className="bg-tertiary rounded-2xl sm:px-16 px-6 sm:py-16 py-10 min-h-[300px]">
+          <div className="bg-tertiary rounded-2xl sm:px-8 px-6 sm:py-16 py-10 min-h-[300px]">
             <h1 className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"> Skills </h1></div>
         </section>
-        <section className="-mt-20 pb-14 sm:px-16 px-6 flex flex-wrap gap-7" >
+        <section className="-mt-20 sm:-mt-10 pb-14 sm:px-8  flex flex-wrap gap-7" >
           
           {skill && skill.map(n=>
             (
-            <div key={n.id} className=" bg-[#E4A5FF] p-10 rounded-3xl xs:w-[320px] w-full">
+            <div key={n.id} className=" bg-[#E4A5FF] px-6 py-10 rounded-3xl xs:p-2 w-full">
               <p className=" font-black text-[#761c9d]  tracking-wider text-[30px] bg-tertiary rounded-2xl " >
                 {n.name.length>22 ? `${n.name.slice(0,22)}...` : n.name}
               </p>
