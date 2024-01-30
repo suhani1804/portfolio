@@ -1,57 +1,123 @@
-import { IoCodeWorking,IoLogoGithub, IoLogoInstagram,IoLogoLinkedin, IoLogoTwitter} from "react-icons/io5";
-
+import {
+  IoCodeWorking,
+  IoLogoGithub,
+  IoLogoLinkedin,
+  IoLogoTwitter,
+} from "react-icons/io5";
+import Textutils from "./assets/Textutils.png";
+import Crypt from "./assets/Crypt.png";
+import Java from "./assets/Java.png";
+import Connect from "./assets/Connect.png";
+import SocialHub from "./assets/SocialHub.png";
+import OneNote from "./assets/OneNote.png";
+import BMICalculator from "./assets/BMICalculator.png";
+import TailUx from "./assets/TailUx.png";
 
 export const Experience = [
-    {
-        id: 1,
-        date: "Oct 2022 - present",
-        iconsSrc: IoCodeWorking ,
-        title: "Core member",
-        location: "CDH",
-        description: "Conducting research and development activities, organizing and managing events, and overseeing project execution.Coordination and innovation to drive successful outcomes and meet objectives within a given timeframe."
-          
-    },
-    {
-      id: 2,
-      date: "Feb 2023 - present ",
-      iconsSrc: IoCodeWorking ,
-      title: "Frontend developer ",
-      location: "Tailux",
-      description:
-        "Creative direction, enhancing user experience, and implementing visual design. Bridge the gap between design and code, translating concepts into functional interfaces while ensuring optimal performance and collaboration with designers.",
-    }   
-  ];
-  export const Project = [
-    {
-        id: 1,
-        name: "TextUtils",
-        des:"The TextUtils project is a versatile text processing tool designed to assist users in manipulating and analyzing text data. It provides a range of functionalities, including text cleaning, coping, and more. With an intuitive user interface, TextUtils aims to simplify text-related tasks and extract meaningful insights from their textual data.",
-        techstack: "ReactJs, Tailwind ",
-        git:"https://github.com/suhani1804/Text-utils",
-    },
-    {
-        id: 2,
-        name: "Crypto Exchange using solidity",
-        des:"The Crypto Exchange project aims to create a decentralized platform for trading cryptocurrencies. It enables users to securely buy, sell, and exchange digital assets while leveraging smart contracts for transparent and automated coin transactions with enhanced security and trust.",
-        techstack: "Solidity, ReactJs, Tailwind ",
-        git:"https://github.com/suhani1804/Crypto-Exchange",
-    },
-    {
-        id: 3,
-        name: "Web3.0 drive",
-        des:"The Web3.0 drive project utilizes the Solidity programming language to create a decentralized cloud storage platform that enables users to store and share files securely. It leverages smart contracts to ensure transparency and security while providing a user-friendly interface for easy file management.",
-        techstack: "Solidity, NextJs, Bootstrap ",
-        git:"https://github.com/suhani1804/G3drive"
-    }
-  ];
+  {
+    id: 1,
+    date: "Oct 2022 - present",
+    iconsSrc: IoCodeWorking,
+    title: "Core member",
+    location: "CDH",
+    description:
+      "Conducting research and development activities, organizing and managing events, and overseeing project execution.Coordination and innovation to drive successful outcomes and meet objectives within a given timeframe.",
+  },
+  {
+    id: 2,
+    date: "Mar 2023 - Dec 2023",
+    iconsSrc: IoCodeWorking,
+    title: "Research Intern",
+    location: "Samsung Research Institute, Bangalore",
+    description:
+      "Segmentation of non-smart devices based on energy consumption pattern of smart appliances. Performed research on the effects of renewable energy and built a dashboard for data visualization. Presented a series of insightful plots of model having accuracy of 97%",
+  },
   
-  export const SocialLinks = [
+  {
+    id: 3,
+    date: "Feb 2023 - present ",
+    iconsSrc: IoCodeWorking,
+    title: "Frontend developer ",
+    location: "Tailux",
+    description:
+      "Creative direction, enhancing user experience, and implementing visual design. Bridge the gap between design and code, translating concepts into functional interfaces while ensuring optimal performance and collaboration with designers.",
+  },
+  {
+    id: 4,
+    date: "Dec 2023 - present ",
+    iconsSrc: IoCodeWorking,
+    title: "Tech Lead ",
+    location: "CodingNinjas X ITER",
+    description:
+      "Leading a team of 10+ members to develop a web application for the college. Responsible for the overall development of the project and ensuring timely delivery of the product. Conducting regular meetings to discuss the progress of the project and assigning tasks to team members.",
+  },
+];
+export const Project = [
+  {
+    id: 1,
+    name: "Crypto Exchange using solidity",
+    img: Crypt,
+    techstack: "Solidity, ReactJs, Tailwind ",
+    git: "https://github.com/suhani1804/Crypto-Exchange",
+  },
+  {
+    id:2,
+    name: "Java dictonary creation",
+    img: Java,
+    techstack: "Java, Socket programming, Swing",
+    git: "https://github.com/suhani1804/Computer_Networking_Project"
+  },
+  {
+    id:3 ,
+    name: "Connect",
+    img: Connect,
+    techstack: "Thirdweb, ether.js ",
+    git: "https://github.com/suhani1804/Walchain"
+  },
+  {
+    id:4,
+    name: "SocialHub (Open Source)",
+    img: SocialHub,
+    techstack: "HTML, CSS, JavaScript",
+    git: "https://github.com/CareerDevelopmentHub/SocialHub"
+  },
+  {
+    id:5,
+    name: "OneNote",
+    img: OneNote,
+    techstack: "React, Tailwind ,Router ",
+    git: "https://github.com/suhani1804/OneNote"
+  },
+  {
+    id: 6,
+    name: "TextUtils",
+    img: Textutils,
+    techstack: "ReactJs, Bootstrap ",
+    git: "https://github.com/suhani1804/Text-utils",
+  },
+  {
+    id: 7,
+    name: "BMI Calculator",
+    img: BMICalculator,
+    techstack: "JQuery, HTML, CSS",
+    git: "https://github.com/suhani1804/WTW-Project"
+  },
+  {
+    id: 8,
+    name: "TailUx",
+    img: TailUx,
+    techstack: "ReactJs, Tailwind ",
+    git: "https://github.com/suhani1804/Tailux-Front-end"
+  }
+];
+
+export const SocialLinks = [
   {
     id: 1,
     iconSrc: IoLogoGithub,
     name: "GitHub",
     link: "https://github.com/suhani1804",
-  }, 
+  },
   {
     id: 3,
     iconSrc: IoLogoLinkedin,
@@ -63,30 +129,54 @@ export const Experience = [
     iconSrc: IoLogoTwitter,
     name: "Twitter",
     link: "https://twitter.com/SuhaniMoha16683",
-  }
- 
+  },
 ];
 export const skill = [
+  {id:1, name: "Java"},
+  {id:2, name: "C"},
+  {id:3, name: "JavaScript"},
+  {id:4, name: "ReactJs"},
+  {id:5, name: "Solidity"},
+  {id:6, name: "MySQL"},
+  {id:7, name: "HTML"},
+  {id:8, name: "CSS"},
+  {id:9, name: "Tailwind"},
+  {id:10, name: "Bootstrap"},
+  {id:11, name: "AWS"},
+  {id:12, name: "Figma"},
+  {id:13, name: "Git"},
+  {id:14, name: "GitHub"},
+];
+
+export const navlinks = [
   {
-      id: 1,
-      name: "ReactJs",
-      des:"I am in the early stages of my journey to become proficient in building web applications with ReactJS. I am enthusiastic about learning and have a solid foundation in JavaScript. I am excited to dive into the React ecosystem and explore concepts such as component-based architecture, state management, and JSX syntax."
+    id: 1,
+    name: "Home",
+    link: "#",
   },
   {
-      id: 2,
-      name: "Blockchain Research",
-      des:" I possess a deep interest and dedication to understanding the intricacies of blockchain technology. I am highly motivated to explore its potential applications, consensus algorithms, and smart contracts. With a solid foundation in computer science and cryptography, I am eager to contribute to the advancement of blockchain solutions.",
-      
+    id: 2,
+    name: "About",
+    link: "#about",
   },
   {
-      id: 3,
-      name: "Web3 Development",
-      des:"As a Web3 developer, I am proficient in building decentralized applications (dApps) using blockchain technologies. I have a strong grasp of Ethereum, Solidity, and smart contract development. I am skilled in integrating with Web3 libraries and APIs, enabling me to create secure and transparent applications for the decentralized web.",
-     
+    id: 3,
+    name: "Experience",
+    link: "#experience",
   },
-  { 
-    id:4,
-    name: "Devops Practitioner",
-    des:" I have a basic understanding of concepts such as CI/CD, version control, and automation. I am enthusiastic about acquiring skills in tools like Git, Docker, and Jenkins to streamline software development processes and improve collaboration between teams. I am excited to grow my knowledge and make meaningful contributions in the DevOps space.",
-  }
+  {
+    id: 4,
+    name: "Projects",
+    link: "#projects",
+  },
+  {
+    id: 5,
+    name: "Skills",
+    link: "#skills",
+  },
+  {
+    id: 6,
+    name: "Contact",
+    link: "#contact",
+  },
 ];
