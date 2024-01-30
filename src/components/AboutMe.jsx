@@ -1,16 +1,16 @@
 import React from 'react'
-import myimage from "../assets/image.jpg";
+import myimage from "../assets/image1.png";
 const AboutMe = () => {
   return (
     <div>
       <section
-            className="w-full lg:h-[520px] grid grid-cols-1 md:grid-cols-2 gap-4 lg:my-24 mb-10"
+            className="w-full lg:h-[460px] grid grid-cols-1 md:grid-cols-2 gap-4 lg:my-24 mb-10"
             id="about"
           >
-            <div className="w-full h-420 flex items-center justify-center">
-              <div className=" w-375 h-420 rounded-lg bg-slate-500">
+            <div className="w-full h-400 flex items-center justify-center">
+              <div className=" h-[75%] rounded-lg bg-transparent ">
                 <img
-                  className=" w-full h-full object-cover rounded-lg drop-shadow-2xl -right-4 top-4 "
+                  className=" w-full h-full object-cover rounded-lg drop-shadow-2xl  -right-4 top-4 "
                   src={myimage}
                   alt=""
                 />

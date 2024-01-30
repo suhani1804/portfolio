@@ -1,0 +1,52 @@
+Structures are the way to define multiple datatypes into a single datatype or basically grouping multiple datatypes togather.
+
+- How to define a structure ?
+
+struct myStruct{
+int a;
+float b;
+char c[30]; // String array of char
+};
+
+- Here int a and float b are called the value of structures.
+
+- How to access and assign value to the "member of stucture" ?
+
+- Firstly we have to define a variable of myStruct datatype and then we can access its members using dot(.) operator.
+
+int main {
+
+struct myStruct m1;
+m1.a = 10;
+m1.b =18.5;
+printf("%d %f",m1.a, m1.b);
+
+}
+
+- The problem with assignment to string members in strcut ?
+  - Actually string are the array of characters and we can cant assign value to them directly ?
+  
+int main (){
+
+struct myStruct m1;
+m1.c = "Shashank"; // this will give an error.
+
+}
+
+  - Then how to resolve this error ? We can use strcpy() method for the assignment to string struct members.
+strcpy(m1.c, "Shashank");
+
+- A simple syntax for defining and assiging values to struct variables in a single line.
+
+struct myStruct m1 = {30, 17.5, "Shashank"};
+
+- In the above declaration, to assign the string, we do not need the strcpy method, it can be assigned directly.
+
+- Copy the structures
+ - Struct variables can be copied onto eachother.
+
+struct myStruct m1;
+m1.int = 10;
+struct myStrcut m2;
+m2 = m1;
+
